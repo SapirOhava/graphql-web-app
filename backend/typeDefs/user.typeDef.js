@@ -13,8 +13,7 @@ const userTypeDef = `#graphql
 #  we could have for the users
 # users: [User!]  - fetch all users ,the response is an array of users where each user can't be null
 # authUser: User! - get the authenticated user, if the user is null it is not authenticated.
-  type Query{
-    users: [User!]   
+  type Query{ 
     authUser: User
     user(userId:ID!): User
   }
