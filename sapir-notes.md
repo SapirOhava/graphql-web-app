@@ -66,3 +66,27 @@ which stands for session id. and the subsequent user request will send the HTTP 
 passport.js is an authentication middleware for node.js
 and is extremly flexible and modular.
 theres alot of strategies to passport.js ( like google authentication , github and more ..) the local strategy implemantation in the docs is mostly for rest API, and if we want to modify it for graphql it would be kind of a pain, which you could still do , but theres a package that will be using that makes it easier called graphql-passport ( HTTP only means nobody can access this via JavaScript)
+
+# Apollo client setup
+
+to connect our react app with our graphql backend we will use apollo client. he shows the official graphql docs and there they use the
+startStandaloneServer which is different from how we did this ( this is because we use the expressMiddlware api reference which basically is an alternative to do it with express so that we could easily use the passport.js and other packages and fetures that we could get and benefit from express )
+
+עצרתי 2:15:44
+
+עצרתי בסרטון - https://www.youtube.com/watch?v=Vr-QHtbmd38
+ב 1:36:40
+זה ממש לפני שהוא נכנס ל
+tailwind and ui
+הוא לא הסביר לעומק על
+graphql
+אז לעבור אחר כך על הקוד ולשאול את
+chat gpt
+או פשוט תוך כדי המשך הסרטון להבין ולעשות טסטים על הקוד ולהבין
+אולי ללמוד גם את הסרטון של
+travis
+הזה
+או אולי לחבר את זה עם הסרטון של 14 שעות
+של
+graphql node next
+וכו

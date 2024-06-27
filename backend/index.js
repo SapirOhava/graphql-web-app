@@ -67,7 +67,7 @@ await server.start();
 app.use(
   "/",
   cors({
-    origin: "http://localhost:3000", // my react app
+    origin: "http://localhost:3006", // my react app
     credentials: true, // so that i could send my cookies alongside the request
   }),
   express.json(),
