@@ -54,7 +54,8 @@ The input in login(input: LoginInput!): User serves as a placeholder for the act
 
 # Authentication
 
-when we have a user that wants to sign up or login they will send a request to our graphql API ( we will use a package calld passport.js in the local authentication strategy - which basically means that the user is going to send the username and password and depending on that fields we sign up the user or login the user) and if this is successfully completed passport.js will try to serialize the user object, and store it into our session store (mongodb)
+when we have a user that wants to sign up or login they will send a request to our graphql API ( we will use a package calld passport.js in the local authentication strategy - which basically means that the user is going to send the username and password and depending on that fields we sign up the user or login the user) and if this is successfully completed passport.js will try to serialize the user object, and store it into our session store (mongodb) - Passport js is an authentication middleware for Node.js
+we used the passport-local strategy the docs - https://www.passportjs.org/packages/passport-local/
 
 # what is serialization:
 
@@ -72,6 +73,6 @@ theres alot of strategies to passport.js ( like google authentication , github a
 to connect our react app with our graphql backend we will use apollo client. he shows the official graphql docs and there they use the
 startStandaloneServer which is different from how we did this ( this is because we use the expressMiddlware api reference which basically is an alternative to do it with express so that we could easily use the passport.js and other packages and fetures that we could get and benefit from express )
 
-עצרתי 3:09:00
+עצרתי 3:25:00
 
 https://www.youtube.com/watch?v=Vr-QHtbmd38

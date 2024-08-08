@@ -19,7 +19,7 @@ const categoryColorMap = {
 
 const Card = ({ transaction }) => {
   const [deleteTransaction, { loading }] = useMutation(DELETE_TRANSACTION, {
-    refetchQueries: ["GetTransactions"],
+    refetchQueries: ["GetTransactions", "GetTransactionStatistics"],
   });
   let { category, amount, location, date, paymentType, description } =
     transaction;
